@@ -39,7 +39,7 @@
       <li class="sidebar-nav-item dropleft" >
         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer;">Services</a>
 		
-		<div class="dropdown-menu p-3 footer rounded" aria-labelledby="navbarDropdown" >
+		<div class="dropdown-menu p-3 rounded" aria-labelledby="navbarDropdown" >
 		<h1>Services</h1>
 		<div class="row">
     <div class="col-6 col-md-4"><a class="dropdown-item" style="font-weight:normal;font-size:12px;" href="#">Salesforce</a></div>
@@ -190,7 +190,34 @@ right projects</p>
 </div>
 
   </header>
+  <div class="col-md-12" style="margin-top:-105px; position:relative;z-index:1 ; background: url('img/product-bg2.png')-150px 0px; height:200px">
 
+ </div>
+   <section style="background-color:#f2f0f9">
+     <div class="container">
+		<div class="row p-5">
+    <div class="col-md-4 text-center">
+      <h3> Service offerings</h3>
+	   <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="icon-plus" style="font-size:2em"></i></a>
+         </div>
+	
+     
+    <div class="col-md-4 text-center">
+      <h3> Explore industries</h3>
+	    <a href="#" data-toggle="modal" data-target="#exampleModal2"><i class="icon-plus" style="font-size:2em"></i></a>
+    
+    </div>
+	<div class="col-md-4 text-center">
+      <h3> Our platforms</h3>
+	  <a href="#" data-toggle="modal" data-target="#exampleModal3"><i class="icon-plus" style="font-size:2em"></i></a>
+     
+    </div>
+	</div>
+	  
+    
+	
+    </div>
+  </section>
   <!-- About -->
   
   <section class="callout">
@@ -226,7 +253,7 @@ right projects</p>
   </section>
 
   <!-- Services -->
-  <section class="content-section ">
+  <section class="content-section product">
     <div class="container">
      
       <div class="row">
@@ -248,33 +275,30 @@ right projects</p>
        
       </div>
     </div>
+	
   </section>
   <!-- Call to Action -->
-   <section class="m-5">
- 
-    <div class="container">
-	<div id="axis" class="five">
-	<img src="img/rocket.png" class="object plane move-ne" style="">
-	</div>
+   <section class="career-section" >
+ <div class="anim-icons">
+            <div class="icon icon-1"></div>
+            <div class="icon icon-2"></div>
+        </div>
+    <div class="container text-center">
+	<h1> Career</h1>
+	
 	<div class="row mt-5">
-    <div class="col-md-4 text-center">
-      <h3> Service offerings</h3>
-	   <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="icon-plus" style="font-size:2em"></i></a>
-         </div>
 	
+
+	     
+    <div class="col-md-12 text-center p-5" style="background:url('img/background-image02.jpg')-300px -200px no-repeat ; z-index:-1;">
 	
-	
-     
-    <div class="col-md-4 text-center">
-      <h3> Explore industries</h3>
-	    <a href="#" data-toggle="modal" data-target="#exampleModal2"><i class="icon-plus" style="font-size:2em"></i></a>
-    
+     <h1  class="career-text">Every day, Elite put people to work in virtually every industry. Let us connect you with a great career opportunity.</h1>
+       <a class="btn btn-primary btn-xl js-scroll-trigger"  href="#" style=" background: linear-gradient(126deg, rgba(203,40,38,1) 31%, rgba(0,13,255,1) 100%)!important;">EXPLORE</a>
+	 
+	   
+   
     </div>
-	<div class="col-md-4 text-center">
-      <h3> Our platforms</h3>
-	  <a href="#" data-toggle="modal" data-target="#exampleModal3"><i class="icon-plus" style="font-size:2em"></i></a>
-     
-    </div>
+	
 	</div>
 	  
     
@@ -285,6 +309,7 @@ right projects</p>
 
   <!-- Call to Action -->
   <section class="content-section bg-primary text-white">
+  
     <div class="container text-center">
       <h1 class="mb-4">We Provide The Solutions To Grow Your Business Faster</h1>
       <a href="#" class="btn btn-xl btn-light mr-4">CONTACT US</a>
@@ -292,7 +317,11 @@ right projects</p>
   </section>
 
   <!-- Portfolio -->
-  <section class="content-section workprocess">
+  <section class="content-section workprocess career-section">
+  <div class="anim-icons">
+            <div class="icon icon-3"></div>
+            <div class="icon icon-2"></div>
+        </div>
     <div class="container">
 	<div id="carouselExampleIndicators " class="carousel slide" data-ride="carousel" >
   <div class="carousel-inner workprocess-slider ">
@@ -382,9 +411,9 @@ right projects</p>
   
 
   <!-- Footer -->
- <footer class="mainfooter footer" role="contentinfo">
-  <div class="footer-middle">
-  <div class="container">
+ <footer class="mainfooter footer pt-5" role="contentinfo">
+  <div class="footer-middle mt-5 pt-5">
+  <div class="container mt-5 pt-5">
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <!--Column1-->
@@ -471,14 +500,17 @@ right projects</p>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:100%">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Service offerings</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      
+      <div class="modal-body">
+         <div class="text-center" style="background:url('img/background-image02.jpg')-200px -200px no-repeat;">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute; right:1%">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        ...
+		        <h1 class="modal-title" id="exampleModalLabel">Service offerings</h1>
+	     <h2  class="text-white" style="padding:10%">Every day, Elite companies put people to work in virtually every industry. Let us connect you with a great career opportunity.</h2>
+       
+	   
+    </div>
       </div>
       
     </div>
@@ -489,14 +521,17 @@ right projects</p>
 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:100%">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Explore industries</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     
+     <div class="modal-body">
+         <div class="text-center" style="background:url('img/background-image02.jpg')-200px -200px no-repeat;">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute; right:1%">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        ...
+		        <h1 class="modal-title" id="exampleModalLabel">Explore industries</h1>
+	     <h2  class="text-white" style="padding:10%">Every day, Elite companies put people to work in virtually every industry. Let us connect you with a great career opportunity.</h2>
+       
+	   
+    </div>
       </div>
       
     </div>
@@ -507,14 +542,17 @@ right projects</p>
 <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:100%">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Our platforms</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+   
+       <div class="modal-body">
+         <div class="text-center" style="background:url('img/background-image02.jpg')-200px -200px no-repeat;">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute; right:1%">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        ...
+		        <h1 class="modal-title" id="exampleModalLabel">Our platforms</h1>
+	     <h2  class="text-white" style="padding:10%">Every day, Elite companies put people to work in virtually every industry. Let us connect you with a great career opportunity.</h2>
+       
+	   
+    </div>
       </div>
       
     </div>

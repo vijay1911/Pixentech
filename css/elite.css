@@ -27,7 +27,7 @@ z-index:0;
 width:200px !important; 
  position:absolute; 
  margin-left:41%; 
- margin-top:28%; 
+ margin-top:32%; 
  text-align:center; 
  font-size:11px;
 }
@@ -39,7 +39,13 @@ left:0px !important;
 font-size:12px!important;
 
 }
-.footer{ background:#efefef url('../img/footer_bg.png'); }
+
+  
+.product {
+       background:url('../img/product-bg.png');
+    }
+  
+.footer{ background:url('../img/footer_bg.png'); }
 .meet{ margin-left:58% }
 .plan{ margin-left:75% }
 .design{ margin-left:75%; margin-top:8%;}
@@ -250,10 +256,11 @@ h6 {
 }
 
 .callout {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background:url("../img/bg-callout.jpg") 0px 0px;
    background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+  padding-bottom:15rem
 }
 
 .callout h2 {
@@ -421,7 +428,83 @@ background:#ffffff url('../img/workprocess.png')center 200px  no-repeat !importa
 }
 
 .plane {
-    top: 105%;
+    top: 145%;
     left: 70%; 
 }
 
+.anim-icons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.career-section .anim-icons .icon-1 {
+    position: absolute;
+    left: -230px;
+    top: -0px;
+    width: 400px;
+    height: 400px;
+     border-radius: 50%;
+    -webkit-animation: zoom-fade 10s infinite linear;
+    animation: zoom-fade 10s infinite linear;
+    background: linear-gradient(126deg, rgba(203,40,38,1) 31%, rgba(0,13,255,1) 100%)!important;
+}
+
+
+  .career-section .anim-icons .icon-3 {
+    position: absolute;
+    left: -150px;
+    top: -140px;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(126deg, rgba(203,40,38,1) 31%, rgba(0,13,255,1) 100%)!important;
+    border-radius: 50%;
+    -webkit-animation: zoom-fade 10s infinite linear;
+    animation: zoom-fade 10s infinite linear;
+    
+    }  
+ .career-section .anim-icons .icon-2 {
+    position: absolute;
+    left: 90%;
+    bottom: -120px;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(126deg, rgba(203,40,38,1) 31%, rgba(0,13,255,1) 100%)!important;
+    border-radius: 50%; 
+    -webkit-animation: zoom-fade 10s infinite linear;
+    animation: zoom-fade 10s infinite linear;
+}
+
+
+.career-section {
+    position: relative;
+        padding: 80px 0px;
+    overflow: hidden;
+}
+
+.career-text {
+padding-top:20%;
+padding-bottom:10%; 
+background: -webkit-linear-gradient(#cd0103, #141362);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  
+  }
+  
+@media (min-width: 576px){ 
+.modal-dialog {
+    max-width:100% !important;
+    
+}
+
+}
+
+.modal-body {
+   
+    padding:0.2rem;
+}
