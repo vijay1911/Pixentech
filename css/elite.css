@@ -353,10 +353,12 @@ h6 {
 
 .callout {
   padding: 3rem 0;
-  background:url("../img/bg-callout.jpg") 0px 0px;
+  background:url("../img/bg-callout.png") 0px 0px;
    background-repeat: no-repeat;
   background-size: cover; 
-  padding-bottom:15rem
+  padding-bottom:15rem; 
+  position:relative;
+  z-index:999; margin-top:-6.5%
 }
 
 .callout h2 {
@@ -688,3 +690,4 @@ color:#ffffff
 .fadeIn-right{
   left: 80%;
 }
+
