@@ -11392,3 +11392,10 @@ font-size: 24px;
 }
 footer a{ text-decoration:none; color:#6D7175}
 footer a:hover{ text-decoration:none; color:rgba(23, 36, 77, 100)}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
