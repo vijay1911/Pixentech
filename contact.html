@@ -35,13 +35,13 @@
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                     <li><a class="dropdown-item" href="art_and_design.html">Art & Design</a></li>
                                     <li><a class="dropdown-item" href="Game_Math_Modelling.html">Game Math Modelling</a></li>
-									<li><a class="dropdown-item" href="Game_FE_and_BE_development.html">Game FE and BE development</a></li>
+									<li><a class="dropdown-item" href="Game_FE_and_BE_development.html">Game FE and BE Development</a></li>
 									<li><a class="dropdown-item" href="Quality_Assurance.html">Quality Assurance</a></li>
 									<li><a class="dropdown-item" href="Platform_Development.html">Platform Development</a></li>
 									<li><a class="dropdown-item" href="Integration_to_Operators.html">Integration to Operators</a></li>
 								<li><a class="dropdown-item" href="Game_Certification.html">Game Certification</a></li>
 								<li><a class="dropdown-item" href="Mobile_App_Development.html">Mobile App Development</a></li>
-							<li><a class="dropdown-item" href="Stuff_augmentation_&_recruitment.html">Stuff augmentation & recruitment</a></li>
+							<li><a class="dropdown-item" href="Stuff_augmentation_&_recruitment.html">Stuff Augmentation & Recruitment</a></li>
                                 </ul>
                             </li>
 						 <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
@@ -57,7 +57,7 @@
                         <div class="col-lg-8 col-xxl-6">
                             <div class="text-center my-5">
                                 <h2 class="fw-bolder mb-3 text-white wow fadeInUp" data-wow-delay=".2s">Contact Us</h2>
-                                <p class="fw-normal mb-4 text-white fst-italic wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <p class="fw-normal mb-4 text-white fst-italic wow fadeInUp" data-wow-delay=".4s">Are you ready to build the next big thing with our highly tailored solutions? Get in Touch.</p>
                                
                             </div>
                         </div>
@@ -82,17 +82,16 @@ thoughts & answer any questions you may have!</p>
                         <div class="col-lg-12">
 						<h2 class="wow fadeInUp" data-wow-delay=".2s" >Get In Touch To Setup a Call</h2>
 							<div class="underline-four mb-2 wow fadeInUp" data-wow-delay=".4s"></div>
-                           	<p class="wow fadeInUp" data-wow-delay=".8s">Just send us your questions or concerns to starting a new project.
-</p> 
-                           <i class="bi bi-envelope-fill" style="color:#CC3A4D"></i>
+                           	<p class="wow fadeInUp" data-wow-delay=".8s">Just send us your questions or concerns to start a new project.</p> 
+                            <i class="bi bi-envelope-fill" style="color:#CC3A4D"></i>
 
                             <div class="h5 mb-2">Email:</div>
                             <p class="text-muted mb-0"> <a href="mailto:info@pixentech.com">info@pixentech.com </a></p>
 							
 							  <p class="text-muted mb-0 mt-4"> 
-							  Monday - Friday:<br/>
-9.00 - 6.00<br/>
-Sunday & Public Holidays (Closed)<br/>
+							    Monday - Friday:<br/>
+                                9.30 AM - 6.30 PM<br/>
+                                Saturday, Sunday & Public Holidays (Closed)<br/>
 							  </p>
                         </div>
                   
@@ -106,36 +105,36 @@ Sunday & Public Holidays (Closed)<br/>
 				</div>
 							                <div class="col-lg-12 shadow p-5 wow fadeInUp" data-wow-delay=".2s" >
 											
-                                   <form id="contactForm" >
+                                   <form action="send_mail.php" name="contactfrm" id="contactfrm" role="form"  method="post" onSubmit="return valid()" >
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <input class="form-control" name="first_name" id="first_name" type="text" placeholder="Enter your name..." />
                                         <label for="name">Your Name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                        
+                                    </div>
+									 <!-- Phone number input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" name="mobileno" id="mobileno"  placeholder="Mobile No" />
+                                        <label for="phone">Mobile No</label>
+                                       
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com"  />
                                         <label for="email">Your Email</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                       
                                     </div>
-                                    <!-- Phone number input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                        <label for="phone">Subject</label>
-                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                    </div>
+                                   
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <textarea class="form-control" name="message" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
                                         <label for="message">Message</label>
                                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                     </div>
                                     
-                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                   
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-sm px-4 me-sm-3 rounded-pill mt-4"  type="submit">Submit</button></div>
+                                    <div class="d-grid"><input class="btn btn-primary btn-sm px-4 me-sm-3 rounded-pill mt-4 "  type="submit" id="Submit" name="Submit" value="Send"></div>
                                 </form>
                             </div>
 						   </div>
@@ -218,5 +217,37 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 		</script>
+		<script language="javascript">
+function valid()
+{
+	var frm = document.contactfrm;
+	if(frm.first_name.value=='')
+	{
+		alert("Please Enter Frist Name");
+		frm.first_name.focus();
+		return false;
+	}
+	
+	if(frm.mobileno.value=='')
+	{
+		alert("Please Enter Mobile No");
+		frm.mobileno.focus();
+		return false;
+	}
+	if(frm.email.value=='')
+	{
+		alert("Please Enter email Address");
+		frm.email.focus();
+		return false;
+	}
+	if(frm.message.value=='')
+	{
+		alert("Please Enter Subject");
+		frm.message.focus();
+		return false;
+	}
+	return true;
+}
+</script>
     </body>
 </html>
