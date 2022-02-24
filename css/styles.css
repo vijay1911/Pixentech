@@ -6079,7 +6079,8 @@ textarea.form-control-lg {
   text-align: center;
   background: none;
   border: 0;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease; 
+  font-size:25px;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
